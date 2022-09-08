@@ -11,10 +11,55 @@ body {
   color: #212121;
   line-height: 1.5;
 }
-
+li,
+ul {
+  list-style: none;
+}
 #search-box {
   font: inherit;
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+}
+
+.country-list {
+  display: block;
+}
+.countryFlagsAtList {
+  display: flex;
+
+  align-items: center;
+
+  border: yellowgreen solid 2px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px -4px rgba(0, 0, 0, 0.75);
+  margin-bottom: 10px;
+}
+
+.countryFlagsAtList:hover {
+  box-shadow: 10px 10px 10px -4px rgba(49, 65, 33, 0.75);
+}
+.countryFlagsAtList p {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-shadow: 3px 3px 7px rgba(152, 154, 138, 1);
+  z-index: -1;
+}
+.countryFlagsAtList img {
+  width: 70px;
+  margin-right: 25px;
+  margin-left: 25px;
+  z-index: -1;
+}
+.countryFlags img {
+  width: 200px;
+  box-shadow: 10px 10px 10px -4px rgba(0, 0, 0, 0.75);
+}
+.country-info li {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 3px 3px 7px rgba(152, 154, 138, 1);
 }
